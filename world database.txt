@@ -17,6 +17,6 @@
 16-select name FROM country WHERE population >=1 IS NOT NULL ORDER BY SurfaceArea DESC LIMIT 10;
 17-SELECT country.name,Percentage FROM countrylanguage join country on countrylanguage.countryCode = country.Code where Percentage >50 and Language = 'Fren
 ch';
-18-select LifeExpectancy FROM country WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy LIMIT 1;
+18-select name FROM country WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy LIMIT 1;
 19-select GovernmentForm, COUNT(GovernmentForm)  FROM country Group By GovernmentForm ORDER BY COUNT(GovernmentForm) DESC LIMIT 1;
 20-select count(Name) from country where IndepYear is not null;
