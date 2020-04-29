@@ -1,0 +1,22 @@
+1- select count(*) from city where CountryCode='USA';
+2- select Population,LifeExpectancy FROM country WHERE name='Argentina';
+3- select LifeExpectancy FROM country WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC LIMIT 1;
+4- SELECT c2.name FROM country c1 join city c2 on c1.capital = c2.ID WHERE c1.capital = c2.id AND CountryCode ='ESP';
+5-SELECT language  FROM countrylanguage  c1 join country c2 on c1.countrycode = c2.code  WHERE region = 'Southeast Asia';
+6- SELECT * FROM city WHERE name LIKE 'f%' LIMIT 25;
+7-select count(*) from city where CountryCode='CHN';
+8-select population FROM country WHERE population >=1 ORDER BY population LIMIT 1;
+9-SELECT COUNT(name) FROM country;
+10-select name FROM country WHERE population >=1 IS NOT NULL ORDER BY SurfaceArea DESC LIMIT 10;
+10a-select name FROM country WHERE population >=1 IS NOT NULL ORDER BY population DESC LIMIT 10;
+11- select name FROM city WHERE CountryCode = 'JPN' ORDER BY population DESC LIMIT 5;
+12-select name,code FROM country WHERE HeadOfState = 'Elisabeth II';
+13-select name FROM country ORDER BY Population/SurfaceArea LIMIT 10;
+14-SELECT DISTINCT Language FROM countrylanguage;
+15-select name FROM country ORDER BY GNP DESC LIMIT 10;
+16-select name FROM country WHERE population >=1 IS NOT NULL ORDER BY SurfaceArea DESC LIMIT 10;
+17-SELECT country.name,Percentage FROM countrylanguage join country on countrylanguage.countryCode = country.Code where Percentage >50 and Language = 'Fren
+ch';
+18-select LifeExpectancy FROM country WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy LIMIT 1;
+19-select GovernmentForm, COUNT(GovernmentForm)  FROM country Group By GovernmentForm ORDER BY COUNT(GovernmentForm) DESC LIMIT 1;
+20-select count(Name) from country where IndepYear is not null;
